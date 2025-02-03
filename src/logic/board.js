@@ -5,13 +5,14 @@ export const checkWinner = (boardToCheck) => {
   // revisa todas  las combinaciones para ver si hay un ganador
   for (const combo of winner_combos) {
     // guarda en a b c los numeros de cada combinación
-    const [a, b, c] = combo
+    const [a, b, c, d] = combo
     if (
       // si el cuadrado del tablero que está en la posición a contiene algo
       boardToCheck[a] &&
       // y es igual a lo que contiene el cuadrado del tablero en la posición b y c
       boardToCheck[a] === boardToCheck[b] &&
-      boardToCheck[a] === boardToCheck[c]
+      boardToCheck[a] === boardToCheck[c] &&
+      boardToCheck[a] === boardToCheck[d]
     ) {
       // es el ganador
       return boardToCheck[a]

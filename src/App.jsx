@@ -15,7 +15,7 @@ function App () {
     const boardFromStorage = window.localStorage.getItem('board')
     return boardFromStorage
       ? JSON.parse(boardFromStorage)
-      : Array(9).fill(null)
+      : Array(20).fill(null)
   })
 
   // crea el estado de turno actual, que puede ser x o o
@@ -28,7 +28,7 @@ function App () {
 
   const resetGame = () => {
   // para resetear el juego tenemos que setear los estados a sus valores iniciales
-    setBoard(Array(9).fill(null))
+    setBoard(Array(20).fill(null))
     setTurn(turns.X)
     setWinner(null)
 
@@ -74,7 +74,7 @@ function App () {
 
   return (
     <main className='board'>
-      <h1>Ta Te Ti</h1>
+      <h1>Cuatro en línea</h1>
       <button onClick={resetGame}>Reset</button>
       <section className='game'>
         {

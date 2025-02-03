@@ -44,7 +44,7 @@ body {
   padding: 8px 12px;
   margin: 25px;
   background: transparent;
-  border: 2px solid rgb(141, 69, 165);
+  border: 2px solid rgb(214, 95, 30);
   color: #eee;
   width: 100px;
   border-radius: 5px;
@@ -60,7 +60,7 @@ body {
 
 .board .game {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
@@ -83,7 +83,7 @@ body {
 
 .square.is-selected {
   color: #fff;
-  background: rgb(141, 69, 165);
+  background: rgb(232, 133, 40);
 }
 
 .winner {
